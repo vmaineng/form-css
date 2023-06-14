@@ -1,44 +1,54 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 10px;
-    min-height: 100vh;
-    display: flex;
+  margin: 10px;
+  min-height: 100vh;
+  display: flex;
 }
 
 .container {
-    position: relative;
-    border-radius: 6px;
+  position: relative;
+  border-radius: 6px;
+  padding: 20px;
 }
 
-.container form{
-    position: relative;
-    margin-top: 16px;
-    min-height: 490px;
+.container form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 490px;
 }
 
-.first-name, .last-name, .age {
-    padding: 10px;
-    flex-direction: column;
-    width: calc(100% /3 - 5px)
+.first-name,
+.last-name,
+.age {
+  flex-direction: column;
+  width: calc(100% / 3 - 5px);
 }
 
 .address {
-    width: 100%;
+  width: 100%;
 }
 
-.place-of-work, .job-title {
-    width: 50%;
-}
-
-.phone-number, .skype {
-    width: 50%
+.place-of-work,
+.job-title,
+.phone-number,
+.skype {
+  width: calc(100% / 2 - 5px);
 }
 
 button {
-    color: green;
+    /* fills background with green */
+  background-color: green;
+  width: 100%;
+  /* font color */
+  color: white;
+  /* adds a pointer as a cursor */
+  cursor: pointer;
+  /* removes the small black line border */
+  border: none;
 }
+
